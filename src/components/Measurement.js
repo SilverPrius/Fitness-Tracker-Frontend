@@ -17,8 +17,23 @@ export default function Measurement() {
 
     return(
         <div>
-            <h1>Measurement:</h1>
-            <h3>{measurement.description}</h3>
+            <h1>{measurement.date}</h1>
+            <h3>Weight {measurement.weight}</h3>
+            <h3>Body Fat % {measurement.bodyFat}</h3>
+            <h3>BMI {measurement.bmi}</h3>
+            <h3>Neck {measurement.neck}</h3>
+            <h3>Across Mid-Shoulder {measurement.acrossMidShoulder}</h3>
+            <h3>Upper Chest {measurement.upperChest}</h3>
+            <h3>Bicep {measurement.bicep}</h3>
+            <h3>Forearm {measurement.forearm}</h3>
+            <h3>Right Wrist {measurement.rightWrist}</h3>
+            <h3>Left Wrist {measurement.leftWrist}</h3>
+            <h3>Upper Stomach {measurement.upperStomach}</h3>
+            <h3>Belly Button {measurement.bellyButton}</h3>
+            <h3>Waist Line {measurement.waistLine}</h3>
+            <h3>Hip/Butt {measurement.hipButt}</h3>
+            <h3>Upper Thigh {measurement.upperThigh}</h3>
+            <h3>Mid Calf {measurement.midCalf}</h3>
             <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button> 
             <button onClick={deleteTheMeasurement}>Delete</button>
             <button onClick={() => {nav('/')}}>Main</button> 

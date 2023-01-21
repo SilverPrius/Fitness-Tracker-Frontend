@@ -5,16 +5,16 @@ function Create() {
     const nav = useNavigate()
 
     const createTheMeasurement = (e) => {
-        const measurement = {description: e.target.description.value, complete: false}
+        const measurement = {date: e.target.date.value, complete: false}
         createMeasurement(measurement)
         nav('/')
     }
 
 return(
-    <div>
-        <h4>Create A New Entry</h4>
+    <div className="create-container">
+        <h3>Create A New Entry</h3>
         <form onSubmit={createTheMeasurement}>
-            <input type='text' name='description' id='dsc'/>
+            <input type='text' name='date' id='date'/>
             <input type='submit'/>
         </form>
     </div>

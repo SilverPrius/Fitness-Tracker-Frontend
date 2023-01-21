@@ -1,6 +1,7 @@
 import { getMeasurements } from "../services/measurements-api"
 import { useState, useEffect } from 'react'
 import Create from "./CreateMeasurement"
+import Progress from "./Progress"
 
 export default function Measurements() {
     const [measurements, setMeasurements] = useState([])
@@ -10,18 +11,23 @@ export default function Measurements() {
     }, [])
     console.log(measurements)
     return (
-        <div>
-            <ul>
+        <div className="main">
+            <div className="main-menu">
+            <Create />
+            </div>
+            <div className="measurements-container">
                 {measurements.map((measurement) => {
                     return (
-                        <li>
-                            <a href={`/${measurement._id}`}>              
-                            </a>
-                        </li>
+                        <a href={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
+                            <div className="each-measurement">
+                                <h2>{measurement.date}</h2>
+                                <h2>Weight{measurement.weight}</h2>
+                                <h2> Body Fat{measurement.bodyFat}</h2>
+                            </div>
+                        </a>
                     )
                 })}
-            </ul>
-            <Create />
+            </div>
         </div>
     )
 }

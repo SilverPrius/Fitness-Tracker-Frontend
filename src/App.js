@@ -3,6 +3,8 @@ import './App.css'
 import EditMeasurement from './components/EditMeasurement';
 import Measurement from './components/Measurement'
 import Measurements from './components/Measurements'
+import Progress from './components/Progress';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -10,11 +12,13 @@ function App() {
       <header className="App-header">
         My Fit Journal
       </header>
+      <a className="progress-button" href='http://localhost:3000/progress'>Progress</a>
       <Router>
         <Routes>
         <Route path='/' element={<Measurements />}/>
         <Route path='/:id' element={<Measurement />}/>
         <Route path='/:id/edit' element={<EditMeasurement />}/>
+        <Route path='/progress' element={<Progress />} />
         </Routes>
         
       </Router>

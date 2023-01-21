@@ -6,7 +6,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 50%;
   border-style: solid;
   min-height: 78vh;
   text-align: center;
@@ -19,14 +19,11 @@
 }
 
 Form {
-  gap: 1rem;
+  font-size: 3rem;
   display: flex;
+  align-items: center;
   justify-content: center;
-}
-
-.form {
-  padding: .5rem;
-  background-color: beige;
+  padding-bottom: 1rem;
 }
 
 .submit-button {
@@ -38,6 +35,40 @@ li {
   list-style-type: none;
 }
 
-.completed{
-  text-decoration: line-through;
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-size: 3rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.measurements-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.each-measurement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-style: solid;
+
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
