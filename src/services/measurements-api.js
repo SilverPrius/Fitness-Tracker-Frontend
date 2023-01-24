@@ -1,7 +1,7 @@
 // All of our endpoints
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/measurements'
+const baseURL = 'https://fit-journal-backend.onrender.com/measurements'
 
 // Show all
 export const getMeasurements = () => {

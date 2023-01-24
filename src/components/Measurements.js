@@ -1,6 +1,7 @@
 import { getMeasurements } from "../services/measurements-api"
 import { useState, useEffect } from 'react'
 import Create from "./CreateMeasurement"
+import { Link } from "react-router-dom"
 
 
 export default function Measurements() {
@@ -13,30 +14,33 @@ export default function Measurements() {
     return (
         <div className="main">
             <div className="main-menu">
-            <a className="progress-button" href='http://localhost:3000/progress'>Progress</a>
+                <a className="progress-button" href='http://localhost:3000/progress'>Progress</a>
                 <Create />
             </div>
             <div className="measurements-container">
                 {measurements.map((measurement) => {
                     return (
-                        <a href={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
-                            <div className="each-measurement">
-                                <div className="dates">
-                                    <h3>{measurement.date}</h3>
+                        // <a href={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
+                        <div>
+                            <Link to={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
+                                <div className="each-measurement">
+                                    <div className="dates">
+                                        <h3>{measurement.date}</h3>
+                                    </div>
+                                    <div>
+                                        <h4 className="weights">Weight</h4>
+                                        <h4>{measurement.weight}</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Body Fat</h4>
+                                        <h4>{measurement.bodyFat}</h4>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="weights">Weight</h4>
-                                    <h4>{measurement.weight}</h4>
-                                </div>
-                                <div>
-                                    <h4>Body Fat</h4>
-                                    <h4>{measurement.bodyFat}</h4>
-                                </div>
-                            </div>
-                        </a>
+                            </Link>
+                        </div>
                     )
                 })}
             </div>
-        </div>
+        </div >
     )
 }
