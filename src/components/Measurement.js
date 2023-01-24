@@ -16,7 +16,8 @@ export default function Measurement() {
     }
 
     return(
-        <div>
+        <div className="measurement-container">
+            <div className="results">
             <h1>{measurement.date}</h1>
             <h3>Weight {measurement.weight}</h3>
             <h3>Body Fat % {measurement.bodyFat}</h3>
@@ -34,9 +35,12 @@ export default function Measurement() {
             <h3>Hip/Butt {measurement.hipButt}</h3>
             <h3>Upper Thigh {measurement.upperThigh}</h3>
             <h3>Mid Calf {measurement.midCalf}</h3>
+            </div>
+            <div class="btn-group">
             <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button> 
             <button onClick={deleteTheMeasurement}>Delete</button>
             <button onClick={() => {nav('/')}}>Main</button> 
+            </div>
         </div>
     )
 }

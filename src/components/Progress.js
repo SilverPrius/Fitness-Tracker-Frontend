@@ -6,14 +6,13 @@ export default function Progress() {
     return (
         <div className='progress-container'>
             <div className='progress-menu'>
-        <button className="progress-button" onClick={() => { nav('/progress') }}>Progress</button>
-        <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
+                <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
+            </div>
+            <div className='progress-links'>
+                <a> Links to different body parts</a>
+            </div>
         </div>
-        <div className='progress-links'>
-            <a> Links to different body parts</a>
-        </div>
-        </div>
-    
+
     )
 }
 

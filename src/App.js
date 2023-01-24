@@ -12,7 +12,6 @@ function App() {
       <header className="App-header">
         My Fit Journal
       </header>
-      <a className="progress-button" href='http://localhost:3000/progress'>Progress</a>
       <Router>
         <Routes>
         <Route path='/' element={<Measurements />}/>

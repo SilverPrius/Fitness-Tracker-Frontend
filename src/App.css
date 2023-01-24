@@ -8,14 +8,15 @@
   flex-direction: column;
   width: 50%;
   border-style: solid;
-  min-height: 78vh;
+  min-height: 80vh;
   text-align: center;
   margin: auto;
   margin-top: 3rem;
   border-radius: 10px;
   padding: 2rem;
   gap: 1rem;
-  background-color: lightgray;
+  background: rgb(64,58,199);
+background: linear-gradient(0deg, rgba(64,58,199,1) 0%, rgba(148,187,233,1) 74%);
 }
 
 Form {
@@ -54,8 +55,9 @@ button {
   flex-direction: column;
   width: 100%;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
+  align-content: center;
+  background-color: ;
 }
 
 .each-measurement {
@@ -63,12 +65,19 @@ button {
   flex-direction: row;
   justify-content: space-around;
   border-style: solid;
-
+  border-radius: 10px;
+  height: 70px;
+  width: 50vh;
+  align-items: center;
+  background-color: cornsilk;
 }
 
-.main-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 1rem;
+.each-measurement:hover {
+  border-color: orange;
+  box-shadow: 10px 10px 10px black;
+  /* box-shadow: 10px 10px 10px orange; */
+}
+
+.each-measurement:active {
+  box-shadow: 10px 10px 10px black;
 }
