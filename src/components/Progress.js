@@ -12,7 +12,6 @@ export default function Progress() {
                 <a> Links to different body parts</a>
             </div>
         </div>
-
     )
 }
 
