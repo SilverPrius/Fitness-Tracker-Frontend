@@ -24,7 +24,7 @@ export default function Measurement() {
                 <button onClick={() => { nav('/') }}>Main</button>
             </div>
             <div className="results">
-                <h1 className="result">{measurement.date}</h1>
+                <h1 className="date-result">{measurement.date}</h1>
                 <h4 className="result">Weight <h4>{measurement.weight} lbs</h4></h4>
                 <h4 className="result">Body Fat <h4>{measurement.bodyFat} %</h4></h4>
                 <h4 className="result">BMI <h4>{measurement.bmi}</h4></h4>
