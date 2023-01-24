@@ -4,7 +4,7 @@ import EditMeasurement from './components/EditMeasurement';
 import Measurement from './components/Measurement'
 import Measurements from './components/Measurements'
 import Progress from './components/Progress';
-import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
