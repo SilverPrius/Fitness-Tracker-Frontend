@@ -5,6 +5,7 @@ import Measurement from './components/Measurement'
 import Measurements from './components/Measurements'
 import Progress from './components/Progress';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import BootstrapCarousel from './components/BootstrapCarousel';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <header className="App-header">
         My Fit Journal
       </header>
+      <BootstrapCarousel />
       <Router>
         <Routes>
         <Route path='/' element={<Measurements />}/>
@@ -19,7 +21,6 @@ function App() {
         <Route path='/:id/edit' element={<EditMeasurement />}/>
         <Route path='/progress' element={<Progress />} />
         </Routes>
-        
       </Router>
     </div>
   );
