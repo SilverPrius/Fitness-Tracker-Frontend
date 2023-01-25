@@ -28,12 +28,12 @@ export default function Measurements() {
                                         <h3>{measurement.date}</h3>
                                     </div>
                                     <div>
-                                        <h4 className="weights">Weight</h4>
-                                        <h4>{measurement.weight}</h4>
+                                        <h5 className="weights">Weight</h5>
+                                        <h5>{measurement.weight}</h5>
                                     </div>
                                     <div>
-                                        <h4>Body Fat</h4>
-                                        <h4>{measurement.bodyFat}</h4>
+                                        <h5>Body Fat</h5>
+                                        <h5>{measurement.bodyFat}</h5>
                                     </div>
                                 </div>
                             </Link>

@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import EditMeasurement from './components/EditMeasurement';
+import EditMeasurement from './components/EditMeasurement'
 import Measurement from './components/Measurement'
 import Measurements from './components/Measurements'
 import Progress from './components/Progress';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import BootstrapCarousel from './components/BootstrapCarousel';
+import BootstrapCarousel from './components/BootstrapCarousel'
+
 
 function App() {
   return (

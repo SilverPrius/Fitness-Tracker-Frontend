@@ -12,6 +12,7 @@
   text-align: center;
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border-radius: 10px;
   padding: 2rem;
   gap: 1rem;
@@ -19,12 +20,18 @@
 background: linear-gradient(0deg, rgba(64,58,199,1) 0%, rgba(148,187,233,1) 74%);
 }
 
+.carousel-img{
+  width:70%;
+  height:50%;
+  border-radius: 10px;
+}
+
 Form {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1rem;
+  gap: 1rem;
 }
 
 .submit-button {
@@ -57,7 +64,6 @@ button {
   gap: 1rem;
   flex-wrap: wrap;
   align-content: center;
-  background-color: ;
 }
 
 .each-measurement {
@@ -73,8 +79,8 @@ button {
 }
 
 .each-measurement:hover {
-  border-color: orange;
-  box-shadow: 10px 10px 10px black;
+  border-color: black;
+  box-shadow: 10px 10px 10px rgb(0, 204, 255);
   /* box-shadow: 10px 10px 10px orange; */
 }
 
@@ -96,7 +102,7 @@ button {
   border-style: solid;
   border-radius: 10px;
   height: 70px;
-  width: 30vh;
+  width: 50vh;
   align-items: center;
   background-color: cornsilk;
   padding: 0 3rem 0 3rem
@@ -125,3 +131,14 @@ button {
   align-items: center;
 }
 
+input {
+  text-align: center;
+}
+
+.edits {
+  text-align: left;
+}
+/* 
+.edits-input {
+  float: right;
+} */

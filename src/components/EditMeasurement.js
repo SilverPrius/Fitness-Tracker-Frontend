@@ -39,26 +39,28 @@ export default function EditMeasurement() {
     return (
         <div>
             <form className="edit-form" onSubmit={editTheMeasurement}>
-                Date:<input type='text' name='date' defaultValue={data.date} />
-                Weight:<input type='number' name='weight' defaultValue={data.weight} />
-                Body Fat %:<input type='number' name='bodyFat' defaultValue={data.bodyFat} />
-                BMI:<input type='number' name='bmi' defaultValue={data.bmi} />
-                Neck:<input type='number' name='neck' defaultValue={data.neck} />
-                Across Mid-Shoulder:<input type='number' name='acrossMidShoulder' defaultValue={data.acrossMidShoulder} />
-                Upper Chest:<input type='number' name='upperChest' defaultValue={data.upperChest} />
-                Bicep:<input type='number' name='bicep' defaultValue={data.bicep} />
-                Forearm:<input type='number' name='forearm' defaultValue={data.forearm} />
-                Right Wrist:<input type='number' name='rightWrist' defaultValue={data.rightWrist} />
-                Left Wrist:<input type='number' name='leftWrist' defaultValue={data.leftWrist} />
-                Upper Stomach:<input type='number' name='upperStomach' defaultValue={data.upperStomach} />
-                Belly Button:<input type='number' name='bellyButton' defaultValue={data.bellyButton} />
-                Waist Line:<input type='number' name='waistLine' defaultValue={data.waistLine} />
-                Hip/Butt:<input type='number' name='hipButt' defaultValue={data.hipButt} />
-                Upper Thigh:<input type='number' name='upperThigh' defaultValue={data.upperThigh} />
-                Mid-Calf:<input type='number' name='midCalf' defaultValue={data.midCalf} />
+                <div className="edits">Date:<input className="edits-input" type='text' name='date' defaultValue={data.date} /></div>
+                <div className="edits">Weight:<input className="edits-input" type='number' name='weight' defaultValue={data.weight} /></div>
+                <div className="edits">Body Fat %:<input className="edits-input" type='number' name='bodyFat' defaultValue={data.bodyFat} /></div>
+                <div className="edits">BMI:<input className="edits-input" type='number' name='bmi' defaultValue={data.bmi} /></div>
+                <div className="edits">Neck:<input className="edits-input" type='number' name='neck' defaultValue={data.neck} /></div>
+                <div className="edits">Across Mid-Shoulder:<input className="edits-input" type='number' name='acrossMidShoulder' defaultValue={data.acrossMidShoulder} /></div>
+                <div className="edits">Upper Chest:<input className="edits-input" type='number' name='upperChest' defaultValue={data.upperChest} /></div>
+                <div className="edits">Bicep:<input className="edits-input" type='number' name='bicep' defaultValue={data.bicep} /></div>
+                <div className="edits">Forearm:<input className="edits-input" type='number' name='forearm' defaultValue={data.forearm} /></div>
+                <div className="edits">Right Wrist:<input className="edits-input" type='number' name='rightWrist' defaultValue={data.rightWrist} /></div>
+                <div className="edits">Left Wrist:<input className="edits-input" type='number' name='leftWrist' defaultValue={data.leftWrist} /></div>
+                <div className="edits">Upper Stomach:<input className="edits-input" type='number' name='upperStomach' defaultValue={data.upperStomach} /></div>
+                <div className="edits">Belly Button:<input className="edits-input" type='number' name='bellyButton' defaultValue={data.bellyButton} /></div>
+                <div className="edits">Waist Line:<input className="edits-input" type='number' name='waistLine' defaultValue={data.waistLine} /></div>
+                <div className="edits">Hip/Butt:<input className="edits-input" type='number' name='hipButt' defaultValue={data.hipButt} /></div>
+                <div className="edits">Upper Thigh:<input className="edits-input" type='number' name='upperThigh' defaultValue={data.upperThigh} /></div>
+                <div className="edits">Mid-Calf:<input className="edits-input" type='number' name='midCalf' defaultValue={data.midCalf} /></div>
+            </form>
+            <div className="edit-buttons">
                 <input className="edit-input" type='submit' value='Submit' />
                 <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
-            </form>
+            </div>
         </div>
     )
 }
