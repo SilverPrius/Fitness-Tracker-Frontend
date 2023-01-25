@@ -14,7 +14,7 @@ return(
     <div className="create-container">
         <h3>Create A New Entry</h3>
         <form onSubmit={createTheMeasurement}>
-            <input type='date' name='date' id='date'/>
+            <input type='text' name='date' id='date'/>
             <input type='submit'/>
         </form>
     </div>

@@ -27,11 +27,15 @@ background: linear-gradient(0deg, rgba(64,58,199,1) 0%, rgba(148,187,233,1) 74%)
 }
 
 Form {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+Form > input {
+  padding: .5rem;
 }
 
 .submit-button {
@@ -121,18 +125,21 @@ button {
 .btn-group { 
   display: flex;
   flex-direction: row;
-  padding-bottom: 1rem;
-  justify-content: space-around;
+  width: 200px;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
 }
 
 .measurement-container {
-  display: flex;
+  display: inline;
   flex-direction: column;
   align-items: center;
 }
 
 input {
   text-align: center;
+  padding: .5rem;
+  border-radius: 10px;
 }
 
 .edits {

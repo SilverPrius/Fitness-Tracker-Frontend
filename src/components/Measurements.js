@@ -14,7 +14,6 @@ export default function Measurements() {
     return (
         <div className="main">
             <div className="main-menu">
-                <a className="progress-button" href='http://localhost:3000/progress'>Progress</a>
                 <Create />
             </div>
             <div className="measurements-container">
