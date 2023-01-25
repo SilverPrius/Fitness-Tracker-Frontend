@@ -39,7 +39,7 @@ export default function EditMeasurement() {
     return (
         <div>
             <form className="edit-form" onSubmit={editTheMeasurement}>
-                <div className="edits">Date:<input className="edits-input" type='text' name='date' defaultValue={data.date} /></div>
+                <div className="edits">Date:<input className="edits-input" type='date' name='date' defaultValue={data.date} /></div>
                 <div className="edits">Weight:<input className="edits-input" type='number' name='weight' defaultValue={data.weight} /></div>
                 <div className="edits">Body Fat %:<input className="edits-input" type='number' name='bodyFat' defaultValue={data.bodyFat} /></div>
                 <div className="edits">BMI:<input className="edits-input" type='number' name='bmi' defaultValue={data.bmi} /></div>
