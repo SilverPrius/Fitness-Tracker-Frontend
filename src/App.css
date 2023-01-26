@@ -16,7 +16,6 @@
   /* border-radius: 10px; */
   padding: 2rem;
   gap: 1rem;
-  background: rgb(64, 58, 199);
   background: linear-gradient(0deg, rgba(64, 58, 199, 1) 0%, rgba(148, 187, 233, 1) 74%);
 }
 
@@ -79,11 +78,12 @@ button {
   width: 600px;
   align-items: center;
   background-color: cornsilk;
+  color: black;
 }
 
 .each-measurement:hover {
-  border-color: black;
-  box-shadow: 10px 10px 10px rgb(0, 204, 255);
+  border-color: orange;
+  box-shadow: 10px 10px 10px black;
   /* box-shadow: 10px 10px 10px orange; */
 }
 
@@ -114,17 +114,12 @@ button {
 .result:hover {
   border-color: orange;
   box-shadow: 10px 10px 10px black;
-  /* box-shadow: 10px 10px 10px orange; */
-}
-
-.result:active {
-  box-shadow: 10px 10px 10px black;
 }
 
 .btn-group {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 600px;
   justify-content: space-evenly;
   padding: 10px 10px 10px 10px;
 }
@@ -156,21 +151,31 @@ input {
   align-items: center;
   background-color: cornsilk;
   padding: 0 5px 0 15px
-
 }
 
 input {
   float: right;
 }
 
-.edit-buttons {
+.measurement-buttons {
   display: flex;
   font-size: 1.5rem;
   border-radius: 10px;
-  width: 100px;
-  height: 60px;
+  width: 140px;
+  height: 65px;
   border-style: solid;
-  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-width: 4px;
+}
+
+.measurement-buttons:hover {
+  box-shadow: 10px 10px 10px orange;
+}
+
+.measurement-buttons:active {
+  box-shadow: 10px 10px 10px black;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -207,5 +212,33 @@ input {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+  }
+
+  .edit-buttons {
+    display: flex;
+  flex-direction: row;
+  width: 270px;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
+  }
+
+  .edit-button {
+    display: flex;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  border-width: 3px;
+  }
+
+  .edit-button:hover {
+    box-shadow: 10px 10px 10px orange;
+  }
+
+  .edit-button:active {
+    box-shadow: 10px 10px 10px black;
   }
  

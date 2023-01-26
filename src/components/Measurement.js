@@ -19,9 +19,9 @@ export default function Measurement() {
     return (
         <div className="measurement-container">
             <div class="btn-group">
-                <button className="edit-buttons" onClick={() => { nav(`/${id}/edit`) }}>Edit</button>
-                <button className="edit-buttons" onClick={deleteTheMeasurement}>Delete</button>
-                <button className="edit-buttons" onClick={() => { nav('/') }}>Main</button>
+                <button className="measurement-buttons" onClick={() => { nav(`/${id}/edit`) }}>Edit</button>
+                <button className="measurement-buttons" onClick={deleteTheMeasurement}>Delete</button>
+                <button className="measurement-buttons" onClick={() => { nav('/') }}>Main</button>
             </div>
             <div className="results">
                 <h4 className="result">Date <h4>{measurement.date}</h4></h4>
@@ -41,6 +41,11 @@ export default function Measurement() {
                 <h4 className="result">Hip/Butt <h4>{measurement.hipButt} inches</h4></h4>
                 <h4 className="result">Upper Thigh <h4>{measurement.upperThigh} inches</h4></h4>
                 <h4 className="result">Mid Calf <h4>{measurement.midCalf} inches</h4></h4>
+            </div>
+            <div class="btn-group">
+                <button className="measurement-buttons" onClick={() => { nav(`/${id}/edit`) }}>Edit</button>
+                <button className="measurement-buttons" onClick={deleteTheMeasurement}>Delete</button>
+                <button className="measurement-buttons" onClick={() => { nav('/') }}>Main</button>
             </div>
         </div>
     )

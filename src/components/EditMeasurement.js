@@ -38,8 +38,12 @@ export default function EditMeasurement() {
     }
     return (
         <div>
-            <h2>Editing</h2>
+            <h1>Editing</h1>
             <form className="edit-form" onSubmit={editTheMeasurement}>
+                <div className="edit-buttons">
+                    <input className="edit-button" type='submit' value='Submit' />
+                    <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
+                </div>
                 <div className="edits">Date:<input className="edits-input" type='text' name='date' defaultValue={data.date} /></div>
                 <div className="edits">Weight:<input className="edits-input" type='number' name='weight' placeholder="lbs" defaultValue={data.weight} /></div>
                 <div className="edits">Body Fat:<input className="edits-input" type='number' name='bodyFat' placeholder="%" defaultValue={data.bodyFat} /></div>
@@ -57,11 +61,11 @@ export default function EditMeasurement() {
                 <div className="edits">Hip/Butt:<input className="edits-input" type='number' name='hipButt' placeholder="inches" defaultValue={data.hipButt} /></div>
                 <div className="edits">Upper Thigh:<input className="edits-input" type='number' name='upperThigh' placeholder="inches" defaultValue={data.upperThigh} /></div>
                 <div className="edits">Mid-Calf:<input className="edits-input" type='number' name='midCalf' placeholder="inches" defaultValue={data.midCalf} /></div>
-            
-            <div className="edit-buttons">
-                <input className="edit-button" type='submit' value='Submit' />
-                <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
-            </div>
+
+                <div className="edit-buttons">
+                    <input className="edit-button" type='submit' value='Submit' />
+                    <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
+                </div>
             </form>
         </div>
     )
