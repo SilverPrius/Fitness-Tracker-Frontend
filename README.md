@@ -7,6 +7,8 @@ This is an app that I had in mind when I first started programming. A personal t
 This repo is for the front-end of my final project of my Software Engineering bootcamp. I used React to build the user interface and created React Routers to navigate through the different components of the app. 
 Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
 
+![Home Route](/public/images/snippet1.png) ![Home Route](/public/images/snippet1.png)
+
 ## Technologies Used
 - HTML, CSS, JavaScript
 - MongoDB, Express, React, Node
