@@ -1,10 +1,10 @@
 # My Fit Journal App
 ## Introduction
-My Fit Journal is an app used to record your body measurements. It is a useful tool to keep records of your health, understanding your body, and can help you stay motivated with your fitness goals. 
+My Fit Journal is an app used to record your body measurements. It is a useful tool track your health, understanding your body, and can help you stay motivated with your fitness goals. 
 
-This is an app that I had in mind when I first started programming. A personal trainer used to record my measurements on his phone with a notes app. I thought it would be a good idea to create an app for this instead.
+This is an app that I had in mind when I first started programming. My personal trainer used to record my measurements on his phone with a notes app. I thought it would be a good idea to create an app for this instead.
 
-This repo is for the front-end of my final project of my Software Engineering bootcamp. I used React to build the user interface and created React Routers to navigate through the different components of the app. 
+This repo is for the front-end of the app. I used React to build the user interface and created React Routers for navgigating through the different components of the app. 
 
 ![Snippet1](/public/images/snippet1.png) 
 ![Snippet2](/public/images/snippet2.png)
