@@ -19,7 +19,6 @@ export default function Measurements() {
             <div className="measurements-container">
                 {measurements.map((measurement) => {
                     return (
-                        // <a href={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
                         <div>
                             <Link to={`/${measurement._id}`} style={{ textDecoration: 'none' }}>
                                 <div className="each-measurement">
@@ -28,11 +27,15 @@ export default function Measurements() {
                                     </div>
                                     <div>
                                         <h5 className="weights">Weight</h5>
-                                        <h5>{measurement.weight}</h5>
+                                        <h5>{measurement.weight} lb</h5>
                                     </div>
                                     <div>
                                         <h5>Body Fat</h5>
-                                        <h5>{measurement.bodyFat}</h5>
+                                        <h5>{measurement.bodyFat} %</h5>
+                                    </div>
+                                    <div>
+                                        <h5>BMI</h5>
+                                        <h5>{measurement.bmi}</h5>
                                     </div>
                                 </div>
                             </Link>

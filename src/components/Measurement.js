@@ -19,12 +19,12 @@ export default function Measurement() {
     return (
         <div className="measurement-container">
             <div class="btn-group">
-                <button onClick={() => { nav(`/${id}/edit`) }}>Edit</button>
-                <button onClick={deleteTheMeasurement}>Delete</button>
-                <button onClick={() => { nav('/') }}>Main</button>
+                <button className="edit-buttons" onClick={() => { nav(`/${id}/edit`) }}>Edit</button>
+                <button className="edit-buttons" onClick={deleteTheMeasurement}>Delete</button>
+                <button className="edit-buttons" onClick={() => { nav('/') }}>Main</button>
             </div>
             <div className="results">
-                <h1 className="date-result">{measurement.date}</h1>
+                <h4 className="result">Date <h4>{measurement.date}</h4></h4>
                 <h4 className="result">Weight <h4>{measurement.weight} lbs</h4></h4>
                 <h4 className="result">Body Fat <h4>{measurement.bodyFat} %</h4></h4>
                 <h4 className="result">BMI <h4>{measurement.bmi}</h4></h4>

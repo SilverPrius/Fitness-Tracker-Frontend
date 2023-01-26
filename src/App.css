@@ -6,23 +6,22 @@
 .App {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  border-style: solid;
-  min-height: 80vh;
+  /* width: 50%; */
+  /* border-style: solid; */
+  /* min-height: 80vh; */
   text-align: center;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  border-radius: 10px;
+  /* margin: auto; */
+  /* margin-top: 3rem;
+  /* margin-bottom: 3rem; */
+  /* border-radius: 10px; */
   padding: 2rem;
   gap: 1rem;
-  background: rgb(64,58,199);
-background: linear-gradient(0deg, rgba(64,58,199,1) 0%, rgba(148,187,233,1) 74%);
+  background: rgb(64, 58, 199);
+  background: linear-gradient(0deg, rgba(64, 58, 199, 1) 0%, rgba(148, 187, 233, 1) 74%);
 }
 
-.carousel-img{
-  width:70%;
-  height:50%;
+.carousel-img {
+  width: 600px;
   border-radius: 10px;
 }
 
@@ -34,7 +33,7 @@ Form {
   gap: 1rem;
 }
 
-Form > input {
+Form>input {
   padding: .5rem;
 }
 
@@ -77,7 +76,7 @@ button {
   border-style: solid;
   border-radius: 10px;
   height: 70px;
-  width: 50vh;
+  width: 600px;
   align-items: center;
   background-color: cornsilk;
 }
@@ -106,7 +105,7 @@ button {
   border-style: solid;
   border-radius: 10px;
   height: 70px;
-  width: 50vh;
+  width: 650px;
   align-items: center;
   background-color: cornsilk;
   padding: 0 3rem 0 3rem
@@ -122,16 +121,16 @@ button {
   box-shadow: 10px 10px 10px black;
 }
 
-.btn-group { 
+.btn-group {
   display: flex;
   flex-direction: row;
-  width: 200px;
+  width: 500px;
   justify-content: space-evenly;
   padding: 10px 10px 10px 10px;
 }
 
 .measurement-container {
-  display: inline;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -142,10 +141,71 @@ input {
   border-radius: 10px;
 }
 
-.edits {
-  text-align: left;
+.create-container {
+  margin: .5rem 0 1.5rem 0;
 }
 
-.create-container {
-  margin-bottom: 1rem;
+.edits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-style: solid;
+  border-radius: 10px;
+  height: 70px;
+  width: 650px;
+  align-items: center;
+  background-color: cornsilk;
+  padding: 0 5px 0 15px
+
 }
+
+input {
+  float: right;
+}
+
+.edit-buttons {
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px;
+  border-style: solid;
+  
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  border-bottom: 20px solid transparent;
+}
+
+.carousel-inner>.item {
+  -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+  -o-transition: -o-transform 1.2s ease-in-out !important;
+  transition: transform 1.2s ease-in-out !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 0;
+}
+        
+  .create-submit-button {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .create-submit-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
