@@ -6,14 +6,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
-  /* border-style: solid; */
-  /* min-height: 80vh; */
   text-align: center;
-  /* margin: auto; */
-  /* margin-top: 3rem;
-  /* margin-bottom: 3rem; */
-  /* border-radius: 10px; */
   padding: 2rem;
   gap: 1rem;
   background: linear-gradient(0deg, rgba(64, 58, 199, 1) 0%, rgba(148, 187, 233, 1) 74%);
@@ -79,12 +72,13 @@ button {
   align-items: center;
   background-color: cornsilk;
   color: black;
+  margin: 5px;
+
 }
 
 .each-measurement:hover {
   border-color: orange;
   box-shadow: 10px 10px 10px black;
-  /* box-shadow: 10px 10px 10px orange; */
 }
 
 .each-measurement:active {
@@ -209,7 +203,7 @@ input {
   }
 
   .create-submit-button:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     color: #fff;
     text-decoration: none;
   }

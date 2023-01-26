@@ -61,7 +61,6 @@ export default function EditMeasurement() {
                 <div className="edits">Hip/Butt:<input className="edits-input" type='number' name='hipButt' placeholder="inches" defaultValue={data.hipButt} /></div>
                 <div className="edits">Upper Thigh:<input className="edits-input" type='number' name='upperThigh' placeholder="inches" defaultValue={data.upperThigh} /></div>
                 <div className="edits">Mid-Calf:<input className="edits-input" type='number' name='midCalf' placeholder="inches" defaultValue={data.midCalf} /></div>
-
                 <div className="edit-buttons">
                     <input className="edit-button" type='submit' value='Submit' />
                     <button className="edit-button" onClick={() => { nav('/') }}>Main</button>
