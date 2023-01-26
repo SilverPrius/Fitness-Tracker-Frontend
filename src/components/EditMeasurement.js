@@ -45,7 +45,7 @@ export default function EditMeasurement() {
                 <div className="edits">Body Fat:<input className="edits-input" type='number' name='bodyFat' placeholder="%" defaultValue={data.bodyFat} /></div>
                 <div className="edits">BMI:<input className="edits-input" type='number' name='bmi' placeholder="#" defaultValue={data.bmi} /></div>
                 <div className="edits">Neck:<input className="edits-input" type='number' name='neck' placeholder="inches" defaultValue={data.neck} /></div>
-                <div className="edits">Across Mid-Shoulder:<input className="edits-input" type='number' name='acrossMidShoulder' placeholder="inches" defaultValue={data.acrossMidShoulder} /></div>
+                <div className="edits">Across Mid-Shoulders:<input className="edits-input" type='number' name='acrossMidShoulder' placeholder="inches" defaultValue={data.acrossMidShoulder} /></div>
                 <div className="edits">Upper Chest:<input className="edits-input" type='number' name='upperChest' placeholder="inches" defaultValue={data.upperChest} /></div>
                 <div className="edits">Bicep:<input className="edits-input" type='number' name='bicep' placeholder="inches" defaultValue={data.bicep} /></div>
                 <div className="edits">Forearm:<input className="edits-input" type='number' name='forearm' placeholder="inches" defaultValue={data.forearm} /></div>
