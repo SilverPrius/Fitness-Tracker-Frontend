@@ -29,7 +29,7 @@ export default function Measurement() {
                 <h4 className="result">Body Fat <h4>{measurement.bodyFat} %</h4></h4>
                 <h4 className="result">BMI <h4>{measurement.bmi}</h4></h4>
                 <h4 className="result">Neck <h4>{measurement.neck} inches</h4></h4>
-                <h4 className="result">Across Mid-Shoulder <h4>{measurement.acrossMidShoulder} inches</h4></h4>
+                <h4 className="result">Across Mid-Shoulders <h4>{measurement.acrossMidShoulder} inches</h4></h4>
                 <h4 className="result">Upper Chest <h4>{measurement.upperChest} inches</h4></h4>
                 <h4 className="result">Bicep <h4>{measurement.bicep} inches</h4></h4>
                 <h4 className="result">Forearm <h4>{measurement.forearm} inches</h4></h4>
