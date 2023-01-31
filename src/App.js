@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         Welcome to My Fit Journal!
       </header>
-      <h3 className="intro">This is an app to record your body measurements. <br/> It is a helpful tool to track your health, understanding your body, and staying motivated to achieving your fitness goals. </h3>
+      <h3 className="intro">This is an app to record your body measurements. <br/> It is a helpful tool for tracking your health, understanding your body, and staying motivated to achieving your fitness goals. </h3>
       <BootstrapCarousel />
       <Router>
         <Routes>
