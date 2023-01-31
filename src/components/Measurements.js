@@ -16,6 +16,7 @@ export default function Measurements() {
             <div className="main-menu">
                 <Create />
             </div>
+            <h3 className="select-text">Select an entry below to view, edit, or delete it.</h3>
             <div className="measurements-container">
                 {measurements.map((measurement) => {
                     return (
